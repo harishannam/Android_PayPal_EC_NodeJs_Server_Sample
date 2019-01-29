@@ -288,6 +288,9 @@ router.get('/checkout-fail', function(req, res, next) {
 	res.redirect('com.example.samplebillpaymentapp://failure');
 });
 
+router.get('/test-deeplink', function(req, res, next) {
+	res.redirect('com.example.paypalcustomtabdemo://onetouch/v1/success');
+});
 
 //////////////////////////PayPal EC Webview Sample Server Code //////////////////////////////////
 
