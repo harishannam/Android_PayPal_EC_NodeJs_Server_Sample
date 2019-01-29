@@ -284,6 +284,15 @@ router.get('/get-products', function(req, res, next) {
   	
 });
 
+router.get('/checkout-success', function(req, res, next) {
+	try{
+		window.location.href = "https://google.com"; 
+	}
+	catch(e) {
+		console.log(e);
+	}
+});
+
 
 //////////////////////////PayPal EC Webview Sample Server Code //////////////////////////////////
 
