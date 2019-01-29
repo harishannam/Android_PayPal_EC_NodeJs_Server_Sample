@@ -279,13 +279,13 @@ router.post('/get-payment-details', function(req, res, next) {
 });
 
 
-router.get('/get-products', function(req, res, next) {
-	res.send(productsJson.products);
-  	
-});
 
 router.get('/checkout-success', function(req, res, next) {
-	res.redirect('https://google.com');
+	res.redirect('com.example.samplebillpaymentapp://success');
+});
+
+router.get('/checkout-fail', function(req, res, next) {
+	res.redirect('com.example.samplebillpaymentapp://failure');
 });
 
 
